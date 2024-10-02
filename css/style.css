@@ -1,0 +1,489 @@
+header{
+    position: fixed;
+    z-index:1;
+    width: 100%;
+}
+
+header .container-owncode .inner-wrap{
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.158) 0px 14px 28px, rgba(0, 0, 0, 0.097) 0px 10px 10px;
+    height: 65px;
+    color: var(--dgreen-color);
+}
+
+header .container-owncode .header-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+    font-style: normal; 
+}
+
+header .container-owncode .header-logo .logo-title{
+    font-size: 10px;
+    left: 120px;
+    position: absolute;
+    transition: font-size 0.3s ease-in-out; 
+}
+
+header .container-owncode .header-logo .logo-title:hover{
+    font-size: 20px;
+}
+header .container-owncode .header-logo .logo-img img{
+    width: 38px;
+    height: auto;
+
+    border-radius: 10px;
+}
+header .container-owncode .header-logo .logo-title{
+    font-size: 15px;
+    padding-left: 5px;
+
+}
+header .container-owncode .header-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .container-owncode .header-menu ul{
+    display: flex;
+    gap: 20px; /* Khoảng cách giữa các mục */
+    padding: 0; /* Bỏ padding mặc định */
+    margin: 0;
+}
+header .container-owncode .header-menu ul li{
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: var(--lgreen-color);
+}
+header .container-owncode .header-menu ul li a{
+    color: var(--dgreen-color);
+    transition: color 0.1s ease-in-out;
+}
+header .container-owncode .header-menu ul li a:hover{
+   
+    color:var(--black-color);
+    border-radius: 10px;
+}
+header .container-owncode .header-social {
+    display: flex; /* Để các biểu tượng nằm ngang */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    gap: 10px; /* Khoảng cách giữa các biểu tượng */
+    margin-right: 40px;
+}
+header .container-owncode .header-social a i{
+    font-size: 20px; /* Kích thước biểu tượng */
+
+}
+
+header .container-owncode .header-social a {
+    width: 40px; /* Chiều rộng của từng icon */
+    height: 40px; /* Chiều cao của từng icon */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-color); /* Màu nền icon, bạn có thể chỉnh sửa */
+    border-radius: 10px; /* Bo tròn icon */
+    text-align: center;
+    transition: background-color 0.7s ease-out ;
+    color: var(--dgreen-color); /* Màu sắc biểu tượng */
+}
+header .container-owncode .header-social a:hover{
+    background-color: var(--dgreen-color);
+    color: var(--white-color);
+}
+
+header .container-owncode .header-social button i{
+    font-size: 20px; /* Kích thước biểu tượng */
+
+}
+
+header .container-owncode .header-social button {
+    width: 40px; /* Chiều rộng của từng icon */
+    height: 40px; /* Chiều cao của từng icon */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-color); /* Màu nền icon, bạn có thể chỉnh sửa */
+    border-radius: 10px; /* Bo tròn icon */
+    text-align: center;
+    transition: background-color 0.7s ease-out ;
+    color: var(--dgreen-color); /* Màu sắc biểu tượng */
+    border: 0;
+}
+header .container-owncode .header-social button:hover{
+    background-color: var(--dgreen-color);
+    color: var(--white-color);
+}
+
+
+/* section-introduce START------  */
+
+.section-introduce {
+    
+    height: 300px;
+    background-image: url(https://i.ytimg.com/vi/FeipIZx7hDw/maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    padding: 200px 200px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    
+}
+.section-introduce::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+.section-introduce .container-owncode-introduce .inner-wrap{
+    display: flex;
+    position: relative;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+
+.section-introduce .container-owncode-introduce .inner-wrap .first-introduce{
+    width: 100%;
+}
+.section-introduce .container-owncode-introduce .inner-wrap .first-introduce .sub-introduce, .title-introduce{
+    margin: 0;
+}
+
+
+
+/* button part */
+.section-introduce .container-owncode-introduce .inner-wrap .first-introduce .button-introduce{
+    padding: 10px 20px 10px 0px;
+    display: inline-block;
+
+  
+}
+.section-introduce .container-owncode-introduce .inner-wrap .first-introduce .button-introduce button{
+    border: 1px solid white;
+    width: 100px;
+    height: 40px;
+    font-family: Roboto slab;
+    border-radius: 5px;
+    background-color: var(--dgreen-color);
+    color: var(--white-color);
+  
+}
+.section-introduce .container-owncode-introduce .inner-wrap .first-introduce .button-introduce .btn-more{
+   transition: background-color 0.5s ease-in-out ;
+}
+.section-introduce .container-owncode-introduce .inner-wrap .first-introduce .button-introduce .btn-more:hover{
+    background-color: aliceblue;
+    color: var(--black-color);
+    
+}
+.section-introduce .container-owncode-introduce .inner-wrap .first-introduce .button-introduce .btn-contact{
+    margin-left: 10px;
+    transition: background-color 0.5s ease-in-out;
+}
+.section-introduce .container-owncode-introduce .inner-wrap .first-introduce .button-introduce .btn-contact:hover{
+    background-color: aliceblue;
+    color: var(--black-color);
+}
+
+
+.section-introduce .container-owncode-introduce .inner-wrap .second-introduce p{
+    margin: 0;
+    font-size: 15px;
+}
+
+.section-introduce .container-owncode-introduce .inner-wrap .second-introduce h2{
+    margin: 0;
+    
+}
+/* section-introduce END-------  */
+
+/* section review START--------- */
+.section-slogan{
+    height: 100px;
+    width: 100%;
+}
+.section-slogan .container .inner-wrap{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.section-slogan .container .inner-wrap .careful i{
+    font-size: 50px;
+    padding: 20px;
+    
+}
+.section-slogan .container .inner-wrap .check i{
+    font-size: 50px;
+    padding: 20px;
+   
+}
+.section-slogan .container .inner-wrap .private i{
+    font-size: 50px;
+    padding: 20px;
+  
+}
+.section-slogan .container .inner-wrap .friendly i{
+    font-size: 50px;
+    padding: 20px;
+   
+   
+}
+
+.section-slogan .container .inner-wrap .careful{
+    text-align: center;
+    background-color:var(--black-color);
+    width: 25%;
+    height: 100px;
+    border: 1px solid white;
+    border-top: none;
+    transition: width 0.5s ease-in-out;
+ 
+}
+.section-slogan .container .inner-wrap .careful:hover{
+    width: 30%;
+}
+.section-slogan .container .inner-wrap .check{
+    width: 25%;
+    height: 100px;
+    background-color:var(--black-color);
+    text-align: center;
+    border: 1px solid white;
+    border-top: none;
+    transition: width 0.5s ease-in-out;
+}
+.section-slogan .container .inner-wrap .check:hover{
+    width: 30%;
+}
+.section-slogan .container .inner-wrap .private{
+    width: 25%;
+    height: 100px;
+    background-color: var(--black-color);
+    text-align: center;
+    border: 1px solid white;
+    border-top: none;
+    transition: width 0.5s ease-in-out;
+}
+.section-slogan .container .inner-wrap .private:hover{
+    width: 30%;
+}
+.section-slogan .container .inner-wrap .friendly{
+    width: 25%;
+    height: 100px;
+    background-color: var(--black-color);
+    text-align: center;
+    border: 1px solid white;
+    border-top: none;
+    transition: width 0.5s ease-in-out;
+}
+.section-slogan .container .inner-wrap .friendly:hover{
+    width: 30%;
+}
+.section-slogan .container .inner-wrap h3{
+    color: white;
+    background-color: black;
+    margin-top: 0;
+    padding-bottom: 4px;
+}
+
+
+/* section - room start  */
+
+.title-room-review{
+   
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid rgb(248, 248, 248);
+    background-color: var(--logobg-color);
+    border: 2px solid rgba(255, 255, 255, 0.829);
+    
+}
+
+.title-room-review h1{
+   color: var(--logo-color);
+   font-size: 50px;
+   padding-bottom: 0px;
+   font-weight: 900; 
+   
+}
+
+.section-room{
+    padding: 100px 200px;
+    background-color: var(--white-color);
+   
+}
+.section-room .container .inner-wrap .bungalow .room-review .room-image{
+    display: flex;
+    justify-content: space-between;
+}
+.section-room .container .inner-wrap .bungalow .room-review .room-image .room-review-image-1{
+    width: 20%;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: width 0.4s ease-in-out;
+    border: solid 1px black;
+}
+.section-room .container .inner-wrap .bungalow .room-review h1{
+    font-size: 50px;
+    
+}
+.section-room .container .inner-wrap .bungalow .room-review .room-image .room-review-image-1:hover{
+    width: 25%;
+}
+
+.section-room .container .inner-wrap .bungalow .room-review .room-image .room-review-image-2{
+    width: 20%;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: width 0.4s ease-in-out;
+    border: solid 1px black;
+    height: auto;
+
+}
+.section-room .container .inner-wrap .bungalow .room-review .room-image .room-review-image-2:hover{
+    width: 25%;
+  
+}
+.section-room .container .inner-wrap .bungalow .room-review .room-image .room-review-image-3{
+    width: 20%;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: width 0.4s ease-in-out;
+    border: solid 1px black;
+}
+.section-room .container .inner-wrap .bungalow .room-review .room-image .room-review-image-3:hover{
+    width: 25%;
+}
+
+.section-room .container .inner-wrap .bungalow .room-review .room-image .room-review-image-4{
+    width: 20%;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: width 0.4s ease-in-out;
+    border: solid 1px black;
+}
+.section-room .container .inner-wrap .bungalow .room-review .room-image .room-review-image-4:hover{
+    width: 25%;
+}
+.section-room .container .inner-wrap .bungalow .room-review{
+    background-color: var(--lgreen-color);
+    padding: 20px;
+    box-shadow: 10px 10px 10px  #e0e0e0c2;
+}
+
+
+
+
+.section-room .container .inner-wrap .hotel .room-review h1{
+    font-size: 50px;
+    
+}
+/* .section-room .container .inner-wrap .hotel .room-review .title{
+    background-color: var(--white-color);
+    color: var(--black-color);
+} */
+.section-room .container .inner-wrap .hotel .room-review{
+    background-color: #000000c2;
+    padding:20px;
+    color: var(--white-color);
+    border:solid 2px white;
+
+}
+
+.section-room .container .inner-wrap .hotel .room-review .room-review-title{
+    background-color: var(--white-color);
+    color: var(--black-color);
+    padding: 20px;
+}
+.section-room .container .inner-wrap .hotel .room-review .room-image{
+    display: flex;
+    justify-content: space-between;
+    border: solid 3px white ;
+  
+   
+}
+.section-room .container .inner-wrap .hotel .room-review .room-image p{
+    padding: 20px;
+    padding-top: 5px;
+    margin: 0;
+    width: 45%;
+    color: var(--black-color);
+    background-color: beige;
+    
+}
+.section-room .container .inner-wrap .hotel .room-review .room-image .room-review-image-1{
+    width: 56%;
+    object-fit: cover;
+    transition: width 0.7s ease-in-out;
+}
+/* .section-room .container .inner-wrap .hotel .room-review .room-image .room-review-image-1:hover{
+    width: 53%;
+} */
+
+
+/* section map */
+
+.section-map .container{
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom:  50px;
+    background-color: var(--dgreen-color);
+    border: 2px solid var(--white-color);
+    
+}
+.section-map iframe{
+    width: 70% ;
+    margin: 0;
+}
+.section-map .section-map-title{
+    width: 25%;
+    background-color: var(--logobg-color);
+    color: var(--white-color);
+    object-fit: cover;
+
+    padding-left: 10px;
+    
+}
+.section-map .section-map-title img{
+    width: 96.5%;
+    border-radius: 10px;
+    border: solid white 1px;
+  
+}
+.section-map .section-map-title h1{
+    margin: 0;
+}
+.section-map .section-map-title .star-map{
+    color: yellow;
+    display: flex;
+   display: flex;
+}
+.section-map .section-map-title .star-map p{
+    color: var(--white-color);
+}
+
+
+.section-map .section-map-title .star-map i{
+    margin-top: 10px;
+    padding-top: 10px;
+   margin-left: 10px;
+    
+}
